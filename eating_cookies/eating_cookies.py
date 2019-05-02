@@ -30,8 +30,6 @@ def eating_cookies(n, cache=None):
 print(eating_cookies(50))
 
 
-
-if __name__ == "__main__":
     if len(sys.argv) > 1:
         num_cookies = int(sys.argv[1])
         print("There are {ways} ways for Cookie Monster to eat {n} cookies.".format(

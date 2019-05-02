@@ -6,15 +6,16 @@ import math
 def recipe_batches(recipe, ingredients):
     comparison = []
     if (recipe.keys() == ingredients.keys()):
-        for key in sorted(ingredients.keys()):
+        for key in ingredients.keys():
             comparison.append((ingredients[key]//recipe[key]))
-        print(comparison)
-        if min(comparison) <= 0:
-            return 0
         else:
             return min(comparison)
     else:
         return 0
+
+
+print(recipe_batches({'butter': 50, 'cheese': 10},
+                     {'milk': 198, 'butter': 52, 'cheese': 10}))
 
 
 if __name__ == '__main__':
